@@ -11,7 +11,7 @@ function JobContainer(props) {
           <p>{props.company}</p>
           <p>{props.startTime} ~ {props.endTime}</p>
           <p>{props.location}</p>
-          <p>Technologies: {props.technologies}</p>
+          <p className={`${props.technologies == "" && "invisible"}`}><span>Technologies: </span>{props.technologies}</p>
         </div>
         <div>
           <ul className="list-disc mx-3">
