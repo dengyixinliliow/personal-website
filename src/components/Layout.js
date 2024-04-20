@@ -5,13 +5,18 @@ import Footer from './Footer';
 function Layout({children}) {
   return (
     <div>
+      <div
+        className="content font-barlow text-secondary"
+        style={{
+          "background-image": "linear-gradient(to right, #789FDA , #DEAABC)",
+        }}
+      >
         <Header />
-        <div className="content font-barlow text-secondary">
-            {children}
-        </div>
+        {children}
         <Footer />
+      </div>
     </div>
-  )
+  );
 }
 
 export default Layout

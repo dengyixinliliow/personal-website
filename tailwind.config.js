@@ -14,17 +14,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#f8f0de',
-        secondary: '#231f20',
-        highlight: '#e98f64',
-        highlight2: "#c8cfc3"
+        primary: "#789FDA",
+        secondary: "#DEAABC",
+        fontcolor: "#FFF8F9",
+        highlight: "#EC5453",
+        highlight2: "#B8679B",
       },
       fontFamily: {
-        barlow: ['Barlow Semi Condensed', 'sans-serif'],
-        dynapuff: ['DynaPuff','cursive']
-      }
+        barlow: ["Barlow Semi Condensed", "sans-serif"],
+        dynapuff: ["DynaPuff", "cursive"],
+        comfortaa: ["Comfortaa", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+        ubuntu: ["Ubuntu", "sans-serif"],
+        seymour: ["Seymour One", "sans-serif"],
+      },
     },
     screens: {
+      'constraint': {'min': '767px'}, 
       '3xl': {'max': '2305px'},
 
       '2xl': {'max': '1535px'},
@@ -44,4 +50,4 @@ module.exports = {
     }
   },
   plugins: [],
-}
+};

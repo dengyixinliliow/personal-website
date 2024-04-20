@@ -1,56 +1,69 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { useState } from "react";
 
 function Home() {
-  const [selfImage, setSelfImage] = useState("/images/self1.png");
-
   return (
     <Layout>
       <div>
-        <div className="h-screen bg-primary md:h-max">
-          <div className="grid md:grid-cols-1 grid-cols-2 h-screen md:h-max">
-            <div
-              onMouseEnter={() => {
-                if (selfImage == "/images/self1.png") {
-                  setSelfImage("/images/self2.png");
-                } else {
-                  setSelfImage("/images/self1.png");
-                }
-              }}
-              className=" cursor-pointer flex md:items-start items-center justify-center"
-            >
-              <img src={`${selfImage}`} alt="self-image-anime" className="" />
-            </div>
-            <div className="flex flex-col md:items-start justify-center items-center mx-5 px-3">
-              <h1 className="text-3xl font-dynapuff">
-                <b className="text-6xl">Hi!</b> I am{" "}
-                <b className="text-highlight">Yixin Deng Emily</b>, a computer
-                science graduate student at Brown University.{" "} As I'm passionate about both communication and technology, I'm interested in building software that can promote the connection between people.
+        <div className="min-h-screen">
+          <div className="grid grid-cols-2 h-screen md:h-max md:grid-cols-1">
+            <div className="flex flex-col justify-center items-center ml-32 w-5/6 md:ml-8 md:my-8 md:w-11/12">
+              <div className="flex items-center justify-center w-0 md:w-full">
+                <img src="/images/self.png" alt="self-anime" />
+              </div>
+
+              <h1 className="font-light font-ubuntu text-xl text-fontcolor leading-relaxed mr-16 w-full md:mr-8">
+                <b className="text-6xl md:text-xl">Hi!</b>
+                <b className="text-3xl md:text-xl">I'm Emily Yixin Deng, a </b>
+                <br className="md:hidden" />
+                <b className="text-6xl font-extrabold font-nunito text-highlight text-opacity-75 md:text-xl md:font-ubuntu">
+                  <span>Full Stack </span>
+                  <br className="md:hidden" />
+                  <span>Developer </span>
+                </b>
+                <br className="md:hidden" />
+                <b>
+                  with a fervent passion for creating innovative software
+                  solutions. With creativity and technical expertise, I thrive
+                  on tackling complex challenges and embracing new technologies.
+                </b>
               </h1>
-              <div className="flex justify-center mt-7">
-                <a href="https://www.linkedin.com/in/yixin-deng-b77b7b1a0/">
+              <div className="flex mt-7 md:w-full">
+                <a
+                  href="https://www.linkedin.com/in/yixin-deng-b77b7b1a0/"
+                  className="cursor-pointer md:w-1/3"
+                >
                   <img
                     src="/images/linkedin.png"
                     alt="linkedin-logo"
-                    className="h-1/3 p-2"
+                    className="h-32 md:h-20 p-2"
                   />
                 </a>
-                <a href="https://github.com/dengyixinliliow">
+                <a
+                  href="https://github.com/dengyixinliliow"
+                  className="cursor-pointer md:w-1/3"
+                >
                   <img
                     src="/images/github.png"
                     alt="github-logo"
-                    className="h-1/3 p-2"
+                    className="h-32 p-2 md:h-20"
                   />
                 </a>
-                <a href="./images/ResumeYixinDeng.pdf">
+                <a
+                  href="./images/ResumeYixinDeng.pdf"
+                  className="cursor-pointer md:w-1/3"
+                >
                   <img
                     src="/images/resume.png"
                     alt="resume-logo"
-                    className="h-1/3 p-2"
+                    className="h-32 p-2 md:h-20"
                   />
                 </a>
               </div>
+            </div>
+
+            <div className="flex items-center justify-center w-11/12 md:hidden">
+              <img src="/images/self.png" alt="self-anime" />
             </div>
           </div>
         </div>
