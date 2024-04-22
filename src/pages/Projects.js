@@ -14,6 +14,7 @@ function Projects() {
       technologies: "MongoDB, ExpressJS, React, NodeJS, AWS",
       description: "A Real Estate Marketplace App",
       logo: FcHome,
+      github: "https://github.com/dengyixinliliow/Realist",
     },
     {
       project: "Documentation Generation",
