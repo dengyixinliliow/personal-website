@@ -22,11 +22,6 @@ function Home() {
                   <span>Developer </span>
                 </b>
                 <br className="md:hidden" />
-                <b>
-                  with a fervent passion for creating innovative software
-                  solutions. With creativity and technical expertise, I thrive
-                  on tackling complex challenges and embracing new technologies.
-                </b>
               </h1>
               <div className="flex mt-7 md:w-full">
                 <a
