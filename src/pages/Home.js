@@ -17,16 +17,6 @@ function Home() {
               </h1>
               <div className="flex mt-7 md:w-full">
                 <a
-                  href="https://www.linkedin.com/in/yixin-deng-b77b7b1a0/"
-                  className="cursor-pointer md:w-1/3"
-                >
-                  <img
-                    src="/images/linkedin.png"
-                    alt="linkedin-logo"
-                    className="h-32 md:h-20 p-2"
-                  />
-                </a>
-                <a
                   href="https://github.com/dengyixinliliow"
                   className="cursor-pointer md:w-1/3"
                 >
