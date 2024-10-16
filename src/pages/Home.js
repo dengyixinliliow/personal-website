@@ -13,14 +13,6 @@ function Home() {
               </div>
 
               <h1 className="font-light font-ubuntu text-xl text-fontcolor leading-relaxed mr-16 w-full md:mr-8">
-                <b className="text-6xl md:text-xl">Hi!</b>
-                <b className="text-3xl md:text-xl">I'm Emily Yixin Deng, a </b>
-                <br className="md:hidden" />
-                <b className="text-6xl font-extrabold font-nunito text-highlight text-opacity-75 md:text-xl md:font-ubuntu">
-                  <span>Full Stack </span>
-                  <br className="md:hidden" />
-                  <span>Developer </span>
-                </b>
                 <br className="md:hidden" />
               </h1>
               <div className="flex mt-7 md:w-full">
